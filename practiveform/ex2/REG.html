@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Create Account</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="head">Create Account</div>
+      <div class="form-group">
+        <div class="in">
+          <label for="fname">First name*</label>
+          <input
+            id="fname"
+            type="text"
+            name="fname"
+            placeholder="enter your first name"
+          />
+        </div>
+        <div class="in">
+          <label for="lname">Last name</label>
+          <input
+            id="lname"
+            type="text"
+            name="lname"
+            placeholder="enter your last name"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="in">
+          <label for="email">Email*</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="enter your email"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="in">
+          <label for="password">Password*</label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="enter your password"
+          />
+        </div>
+        <div class="in">
+          <label for="confirm">Confirm Password*</label>
+          <input
+            id="confirm"
+            type="password"
+            name="confirm"
+            placeholder="enter your password again"
+          />
+        </div>
+      </div>
+      <div class="form-group" id="gender">
+        <label>Gender</label><br />
+        <input id="male" type="radio" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input id="female" type="radio" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+      <div class="form-group" id="hobbies">
+        <label>Hobbies:</label>
+        <label for="hobbies_music">Music</label>
+        <input
+          id="hobbies_music"
+          type="checkbox"
+          name="hobbies"
+          value="Music"
+        />
+        <label for="hobbies_sports">Sports</label>
+        <input
+          id="hobbies_sports"
+          type="checkbox"
+          name="hobbies"
+          value="Sports"
+        />
+        <label for="hobbies_travel">Travel</label>
+        <input
+          id="hobbies_travel"
+          type="checkbox"
+          name="hobbies"
+          value="Travel"
+        />
+        <label for="hobbies_movies">Movies</label>
+        <input
+          id="hobbies_movies"
+          type="checkbox"
+          name="hobbies"
+          value="Movies"
+        />
+      </div>
+      <div class="form-group">
+        <div class="in">
+          <label for="source">Source of Income</label>
+          <input id="source" type="text" placeholder="Employed" />
+        </div>
+        <div class="in">
+          <label for="income">Income</label>
+          <input id="income" type="range" min="0" max="100" value="20" />
+          <span id="income-value">20K</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="in">
+          <label for="upload">Upload Profile Picture</label>
+          <input id="upload" type="file" />
+        </div>
+        <div class="in">
+          <label for="age">Age</label>
+          <input id="age" type="number" value="18" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="bio">Bio</label>
+        <textarea id="bio" placeholder="Write about yourself"></textarea>
+      </div>
+      <div class="form-group">
+        <button id="create-button">Create</button>
+      </div>
+    </div>
+  </body>
+</html>
